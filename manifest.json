@@ -5,7 +5,7 @@
   "description": "Shows hostname and public IP address",
   "author": "elapt1c",
   "entry_point": "plugin.py",
-  "dependencies": [],
+  "dependencies": ["requests"],
   "ui_schema": [
     {"type": "section", "label": "Control"},
     {"type": "button", "name": "refresh", "label": "🔄 Get System Info"},
