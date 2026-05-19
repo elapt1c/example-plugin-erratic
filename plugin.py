@@ -26,6 +26,7 @@ def handle_refresh(args):
         except:
             public_ip = "unreachable"
         info = f"Hostname: {hostname}\nLocal IP: {local_ip}\nPublic IP: {public_ip}"
+        print(info)
         plugin.set_output("info", info)
         plugin.set_output("status", "Done")
     except Exception as e:
